@@ -1,0 +1,31 @@
+:root {
+  --color-peach: hsl(11, 73%, 66%);
+  --color-black: hsl(270, 3%, 11%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-peach: hsl(11, 100%, 80%);
+  --color-lighter-peach: hsl(14, 76%, 97%);
+  --color-dark-grey: hsl(264, 5%, 20%);
+  --color-light-grey: hsl(210, 17%, 95%);
+  --ff-primary: "Jost", sans-serif;
+  --fs-14: 1.4rem;
+  --fs-15: 1.5rem;
+  --fs-16: 1.6rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --ls-1: 0.1rem;
+  --ls-2: 0.2rem;
+  --ls-5: 0.5rem;
+  --roundness: 1.5rem;
+  --roundness-btn: 0.8rem;
+  --transition-300: all 300ms ease;
+}
+
+/* pre resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
