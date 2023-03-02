@@ -1,26 +1,29 @@
 :root {
-  --color-peach: hsl(11, 73%, 66%);
-  --color-black: hsl(270, 3%, 11%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-light-peach: hsl(11, 100%, 80%);
-  --color-lighter-peach: hsl(14, 76%, 97%);
-  --color-dark-grey: hsl(264, 5%, 20%);
-  --color-light-grey: hsl(210, 17%, 95%);
-  --ff-primary: "Jost", sans-serif;
-  --fs-14: 1.4rem;
-  --fs-15: 1.5rem;
-  --fs-16: 1.6rem;
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-  --ls-1: 0.1rem;
-  --ls-2: 0.2rem;
-  --ls-5: 0.5rem;
-  --roundness: 1.5rem;
-  --roundness-btn: 0.8rem;
-  --transition-300: all 300ms ease;
-}
+  --ff-serif: "DM Serif Display", serif;
+  --ff-sans: "Public Sans", sans-serif;
 
+  /* small screen font-sizes */
+  --fs-200: 0.9375rem; /* 15px */
+  --fs-300: 1.125rem; /* 18px */
+  --fs-400: 1.5rem; /* 24px */
+  --fs-500: 2rem; /* 32px */
+  --fs-600: 2.25rem; /* 36px */
+
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --clr-white-100: #fbfcfe;
+  --clr-white-200: #edf3f8;
+
+  --clr-blue-100: #6c8294;
+  --clr-blue-200: #36536b;
+  --clr-blue-300: #1b262f;
+
+  --clr-pink-100: #da6d97;
+  --clr-pink-200: #ba4270;
+
+  --br: 1rem;
+}
 /* pre resets */
 *,
 *::before,
@@ -29,7 +32,48 @@
   padding: 0;
   box-sizing: inherit;
 }
-nav img {
-  height: 100px;
-  width: 100px;
+nav {
+  padding: 3rem 0;
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-around;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 60%;
+  width: 50rem;
+  height: 50rem;
+  z-index: -1;
+  background-image: url(./components/main/desktop/bg-pattern-circle.svg);
+  background-size: cover;
+}
+
+.navlinks,
+ul,
+li {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+li a {
+  color: var(--clr-blue-100);
+  text-decoration: none;
+}
+nav button {
+  background-color: var(--clr-pink-200);
+  padding: 1rem 2rem;
+  color: var(--clr-white-200);
+  font-size: var(--fs-300);
+  font-family: var(--ff-sans);
+  transition: all ease 0.3s;
+  border-radius: 19px;
+  border: none;
+}
+nav button:hover {
+  background-color: var(--clr-blue-200);
+  color: white;
 }

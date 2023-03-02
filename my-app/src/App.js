@@ -1,9 +1,14 @@
 import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/main/Home";
+
 import "./App.css";
-import Navbar from "./components/Nav";
+import Navbar from "./components/main/Nav";
 const App = () => {
-  return <Navbar />;
+  <BrowserRouter>
+    <Routes>
+      <Route />
+    </Routes>
+  </BrowserRouter>;
 };
 
 export default App;
